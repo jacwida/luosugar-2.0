@@ -4,7 +4,7 @@ import { getPostsMeta } from "@/lib";
 
 const Card = async () => {
   const posts: any = await getPostsMeta();
-  const sorted: any[] = posts.sort(
+  const sorted: any[] = posts?.sort(
     //@ts-ignore
     (a: string, b: string) => new Date(b.date) - new Date(a.date)
   );
