@@ -3,7 +3,7 @@ import { MessagesSquare } from "lucide-react";
 
 const Trending = async () => {
   const posts: any = await getPostsMeta();
-  const trending: any = posts.slice(-6);
+  const trending: any = posts.filter((post: any) => post.category === "cars");
   return (
     <div className=" border-[1px] rounded-xl h-fit  w-full p-4 py-6">
       <h1 className="font-semibold text-slate-600 text-xl">Trending Posts</h1>
