@@ -43,7 +43,7 @@ export async function getPostsMeta() {
     {
       headers: {
         Accept: "application/vnd.github+json",
-        Authorization: `Bearer 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`,
+        Authorization: `Bearer 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`,
         "X-GitHub-Api-Version": "2022-11-28",
       },
     }
